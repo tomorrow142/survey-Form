@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  </head>
+  <link rel="stylesheet" href="styles.css">
+<body>
+    <section class="titulo">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </section>
+  <!--empiezo el formulario-->
+  <form id="survey-form">
+    <!--name-->
+    <label for="name" id="name-label">Name</label>
+      <input id="name" required type="text" placeholder="Enter your name"></input>
+    <!--email-->
+    <label for="email" id="email-label">Email</label>
+      <input id="email" required type="email" placeholder="Enter your email"></input>
+      <!--number-->
+    <label for="number" id="number-label">Age (optional)</label>
+      <input id="number" required type="number" min="10" max="99" placeholder="Age"></input>
+      <!--select-->
+      <label for="dropdown ">Which option best describes your current role?</label>
+      <select id="dropdown">
+          <option disabled selected value="">Select current role</option>
+          <option value="1">student</option>
+          <option value="2">Full time job</option>
+          <option value="3">Full time learner</option>
+          <option value="4">Prefer not to say</option>
+          <option value="5">Other</option>
+      </select>
+      <!--fin del select-->
+      <!--empiezan opciones-->
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <label>
+      <input name="recommend" type="radio" value="Definitely" checked>Definitely</input>
+        </label>
+      <label>
+      <input name="recommend" type="radio" value="Maybe">Maybe</input>
+        </label>
+      <label>
+      <input name="recommend" type="radio" value="Not sure">Not sure</input>
+        </label>
+<!--empiezan otras opcines selet-->
+    <p>What is your favorite feature of freeCodeCamp?</p>
+    <select>
+      <option selected disabled value="">select an option</option>
+      <option value="challenges">challenges</option>
+      <option value="projects">projects</option> 
+      <option value="community">community</option>
+      <option value="open source">open source</option>
+    </select>
+    <!--box-->
+    <p>What would you like to see improved? (Check all that apply)</p>
+    <input type="checkbox" value="Front-end Projects">Front-end Projects</input><br>
+    <input type="checkbox" value="Back-end Projects">Back-end Projects</input><br>
+    <input type="checkbox" value="Data Visualization">Data Visualization</input><br>
+    <input type="checkbox" value="Challenges">Challenges</input><br>
+    <input type="checkbox" value="Open Source Community">Open Source Community</input><br>
+    <input type="checkbox" value="Gitter help rooms">Gitter help rooms</input><br>
+    <input type="checkbox" value="Videos">Videos</input><br>
+    <input type="checkbox" value="City Meetups">City Meetups</input><br>
+    <input type="checkbox" value="Wiki">Wiki</input><br>
+    <input type="checkbox" value="Forum">Forum</input><br>
+    <input type="checkbox" value="Additional Courses">Additional Courses</input><br>
+    <section id="apartado_final">
+    <!--textarea-->
+    <p id="comment">Any comments or suggestions?</p>
+    <textarea id="textarea" placeholder="enter your comment here"></textarea>
+    <!--submit-->
+    <br>
+    <input type="submit" id="submit" value="submit">
+    </section>
+  </form>
+</body>
+</html>
